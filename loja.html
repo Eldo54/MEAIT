@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>loja</title>
+    <style>
+    body{
+        background-color: rgb(2, 2, 43);
+    }
+    h3{
+        font-size: 50px;
+    }
+    p{
+        color: #0000;
+    }
+    .container{
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 5%;
+    }
+
+    .btn{
+        background-color: rgb(255, 196, 0);
+        color: rgb(255, 255, 255);
+        padding: 15px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        display: inline-block;
+        transition: 0.1s;
+    }
+    .btn:hover{
+        background-color: rgb(172, 172, 9);
+    }
+    header{
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
+        background-image: url(img/BAC.webp);
+        height: 200px;
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+    }
+    nav ul a{
+        color: white;
+        margin: 0 25px;
+        text-transform: uppercase;
+        font-size: 20px;
+        display: block;
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    nav ul a:not(.btn)::after{
+        content: "";
+        background-color: red;
+        height: 3px;
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+        transition: 0.3s;
+    }
+    nav ul a:hover::after{
+        width: 100%;
+    }
+    nav .menu-icone{
+        cursor: pointer;
+        font-size: 25px;
+        color: red;
+        display: none;
+    }
+    .loja .container{
+    align-items: center;
+    }
+    .loja .loja-text{
+        width: 50%;
+        padding: 0 40px;
+        color: white;
+    }
+    .loja .loja-text h3{
+        font-size: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: yellow;
+    }
+    .loja .loja-text main{
+        margin: 5px 0 10px 0;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+    }
+    .loja .loja-img{
+        border-radius: 2px;
+    }
+    .loja .loja-img:hover{
+        background-color: yellow;
+        margin-top: -5px;
+        cursor: pointer;
+
+    }
+    .loja .loja-img img{
+        width: 100%;
+    }
+    .footer{
+    background-color: rgb(208, 255, 0);
+    text-align: center;
+    }
+    .footer i{
+        color: blue;
+        font-size: 14px;
+        background-color: white;
+        padding: 10px;
+        margin: 3px;
+        border-radius: 10px;
+        height: 100%;
+        transition: 0.3s;
+    }
+    .footer i:hover{
+        background-color: red;
+        margin-top: -5%;
+    }
+    @media(max-width: 830px){
+    .ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: red;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <a href="index.html">
+                    <img src="img/barcelona (1).png" alt="logo">
+                </a>
+                <ul class="ul">
+                    <a href="index.html">HOME</a>
+                    <a href="clube.html">CLUBE</a>
+                    <a href="jogadores.html">JOGADORES</a>
+                    <a class="btn" href="loja.html">Loja</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="loja">
+        <div class="container">
+            <div class="loja-text">
+                <h3>FREE DELIVERY IN EUROPE</h3>
+            </div>
+            <div class="loja-img">
+                <img src="img/first.jpg" alt="Mais que um clube">
+            </div>
+            <div class="loja-text">
+                <h3>SANTJORDI GIFTS</h3>
+            </div>
+            <div class="loja-img">
+                <img src="img/equi 2.jpg" alt="Mais que um clube">
+            </div>
+            <div class="loja-text">
+                <h3>KITS</h3>
+            </div>
+            <div class="loja-img">
+                <img src="img/KITS.jpg" alt="Mais que um clube">
+            </div>
+            <div class="loja-text">
+                <h3>LOOK</h3>
+            </div>
+            <div class="loja-img">
+                <img src="img/look.jpg" alt="Mais que um clube">
+            </div>            
+            <div class="loja-text">
+                <h3>TRAINING</h3>
+            </div>
+            <div class="loja-img">
+                <img src="img/trein.jpg" alt="Mais que um clube">
+            </div>
+            <div class="loja-text">
+                <h3>KIDS</h3>
+            </div>
+            <div class="loja-img">
+                <img src="img/kids.jpg" alt="Mais que um clube">
+            </div> 
+            <div class="loja-text">
+                <h3>LEGANCY</h3>
+            </div>
+            <div class="loja-img">
+                <img src="img/legancy.jpg" alt="Mais que um clube">
+            </div>  
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="links">
+                <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"> <i class="fa fa-snapchat-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a href="#"> <i class="fa fa-spotify" aria-hidden="true"></i></a>
+            </div>
+            <main>#Densevovido por Eldo Macuacua</main>
+        </div>
+    </footer>
+</body>
+</html>

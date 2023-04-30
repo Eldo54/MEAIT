@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Historia Completa do Clube</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+body{
+    background-color: rgb(2, 2, 43);
+}
+h3{
+    font-size: 50px;
+}
+p{
+    color: #0000;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn{
+    background-color: rgb(255, 196, 0);
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+.btn:hover{
+    background-color: rgb(172, 172, 9);
+}
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    background-image: url(img/BAC.webp);
+    height: 200px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 20px;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav ul a:not(.btn)::after{
+    content: "";
+    background-color: red;
+    height: 3px;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    transition: 0.3s;
+}
+nav ul a:hover::after{
+    width: 100%;
+}
+nav .menu-icone{
+    cursor: pointer;
+    font-size: 25px;
+    color: red;
+    display: none;
+}
+.clube .container{
+    align-items: center;
+}
+.clube .clube-text{
+    width: 70%;
+    padding: 0 40px;
+    color: white;
+    text-align: justify;
+}
+.clube .clube-text h3{
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: yellow;
+}
+.clube .clube-text h4{
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 0, 0);
+}
+
+.clube .clube-text main{
+    margin: 5px 0 10px 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+.clube .clube-img{
+    width: 100%;
+}
+.clube .clube-img img{
+    width: 100%;
+}
+.footer{
+    background-color: rgb(208, 255, 0);
+    text-align: center;
+    }
+.footer i{
+    color: blue;
+    font-size: 14px;
+    background-color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+    height: 100%;
+    transition: 0.3s;
+}
+.footer i:hover{
+    background-color: red;
+    margin-top: -5%;
+}
+@media(max-width: 830px){
+    .ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: red;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <a href="index.html">
+                    <img src="img/barcelona (1).png" alt="logo">
+                </a>
+                <ul class="ul">
+                    <a href="index.html">HOME</a>
+                    <a href="clube.html">CLUBE</a>
+                    <a href="jogadores.html">JOGADORES</a>
+                    <a class="btn" href="loja.html">Loja</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="clube">
+        <div class="container">
+            <div class="clube-text">
+                <h3>Barcelona FC - Guia da História do Clube</h3>
+                <main>
+                    Mesmo que você não tenha percebido, você provavelmente já viu o slogan do Barcelona FC dezenas de vezes antes. Está escrito em letras grandes pela arquibancada no estádio Camp Nou: 'MES QUE UN CLUB'.
+                </main>
+                <div class="clube-text">
+                </div>
+                <div class="clube-img">
+                    <img src="img/club1.jpg" alt="Mais que um clube">
+                </div>
+                <h4>Slogan do Barcelona FC “Mais do que um clube"</h4>
+                <main>
+                    Quer dizer em catalão "Mais do que um clube". Ele resume e detalha tudo o que este clube único representa. A frase foi inventada em 1968 e é dita para resumir os aspectos sociais do que o clube realiza, bem como seu forte espírito catalão.
+                </main>
+                <h3>História do Barcelona FC</h3>
+                <main>
+                    Para compreender a importância do status do Barcelona FC é importante entender a sua história:
+                    Em 1899, Joan Gamper, um suíço, decidiu introduzir o futebol em Barcelona, montando um time. O clube foi oficialmente fundado no dia 29 de novembro de 1899.
+                    Cresceu cada vez mais, ganhando títulos como a Copa Macaya em 1902, a Copa Pirineus em 1910 - 1912.
+                    O Barcelona FC construiu seu primeiro estádio em 1909, com capacidade para 6.000 pessoas.
+                    Durante a década de 1920, a fama e o sucesso do time aumentou. Eles ganharam o primeiro Campeonato da Liga na temporada de 1928 - 1929. Com a nova popularidade do clube, foi necessário construir um novo estádio. Em 1922, o estádio ‘Les Corts’ foi construído, com capacidade para 22.000 pessoas.
+                    É importante lembrar que o Barcelona FC sobreviveu à Guerra Civil. Em 1936, as tropas de Franco atiraram no presidente do clube, Josep Sunyol, devido à sua filiação a um partido de esquerda.
+                    Todos os fãs do Barcelona FC se orgulham do que é chamado de Temporada de ‘Cinco Copas’. Este foi o período entre 1951 - 1952, quando o Barcelona FC venceu a Copa, a Liga, a Copa América, o Martini Rosso e o Eva Duarte.
+                    Em 1957, o Camp Nou foi construído, com capacidade inicial para 90.000 pessoas.
+                </main>
+                <div class="clube-img">
+                    <img src="img/club2.jpg" alt="Estadio FCB">
+                </div>
+                <div class="clube-test">
+                    <h4>Estádio Camp Nou do Barcelona FC</h4>
+                    <main>
+                        O sucesso do Barcelona aumentou cada vez mais. Em 1983, o time foi capaz de arcar com jogadores como Bernd Schuster e Diego Maradona.
+                        Em 1988 - 1989, a chegada do lendário Johan Cruyff, como técnico, provocou muitas mudanças no time. O Barça estava forte nesta época, ganhando muitas competições. Os fãs do Barça começaram a entoar "agora temos um novo time".
+                        Em 1996 - 97, duas novas chegadas ao time tiveram um efeito estimulante: Bobby Robson, no banco, e Ronaldo, no gramado. Este foi um ano bem sucedido para o time.
+                        Em 2003, uma nova leva de jogadores se juntou ao time. Isso incluiu Rijkaard e Ronaldinho, Puyol e Xavi.
+                        Em 2004 - 2005, jogadores como Deco e Eto'o se juntaram ao time.
+                        Na temporada de 2004 - 2005, o Barcelona FC ganhou a Liga. Isso aconteceu novamente em 2005 - 2006, quando o clube ganhou a Liga novamente e a Copa Europeia em Paris.
+                    </main>
+                </div>
+                <div class="clube-test">
+                    <h3>O Barcelona FC Hoje</h3>
+                    <main>
+                        Uma coisa que torna o Barcelona FC verdadeiramente único é seu status de ‘Clube de Futebol’. É um dos poucos times restantes que não é uma sociedade limitada. Isto significa que o clube é ainda de propriedade de seus membros: há 144 mil deles. Esses membros também escolhem o Presidente do time através de um complexo sistema de votação.
+                        Os objetivos do Barcelona FC são fortemente refletidos na recusa deles em aceitar uma empresa patrocinadora na camisa. Em 7 de setembro de 2006, o time anunciou sua nova aliança com a UNICEF para auxílio às crianças. Eles prometeram um valor anual em doações ao departamento de projetos voltados à HIV/AIDS. Eles também usam o espaço da frente da camisa, normalmente reservados para as grandes corporações, para anunciar a UNICEF e, assim, a sua causa. O time continuará a usar o logotipo da UNICEF na camisa.
+                        É claro que o Barcelona FC está no direito de alegar que a instituição que eles criaram é "mais do que um clube".
+                        Se você visitar o Barcelona, você pode querer fazer o famoso passeio ao estádio e museu do Barcelona FC, que é o mais popular em Barcelona.
+                    </main>
+                </div>
+                <div class="clube-img">
+                    <img src="img/clube3.webp" alt="Mapa">
+                </div>
+                <div class="clube-text">
+                    <h4>Mapa da localização mostrando o percurso a pé para o Estádio de Futebol Camp Nou a partir da estação de metrô mais próxima.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="links">
+                <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"> <i class="fa fa-snapchat-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a href="#"> <i class="fa fa-spotify" aria-hidden="true"></i></a>
+            </div>
+            <main>#Densevovido por Eldo Macuacua</main>
+        </div>
+    </footer>
+</body>
+</html>

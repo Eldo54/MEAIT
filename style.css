@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+body{
+    background-color: rgb(2, 2, 43);
+}
+section,
+footer{
+    padding: 54px 0;
+
+}
+h3{
+    font-size: 50px;
+}
+p{
+    color: #0000;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn{
+    background-color: rgb(255, 196, 0);
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+.btn:hover{
+    background-color: rgb(172, 172, 9);
+}
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 20px;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav ul a:not(.btn)::after{
+    content: "";
+    background-color: red;
+    height: 3px;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    transition: 0.3s;
+}
+nav ul a:hover::after{
+    width: 100%;
+}
+nav .menu-icone{
+    cursor: pointer;
+    font-size: 25px;
+    color: red;
+    display: none;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+.banner .banner-text h1{
+    font-size: 76px;
+    color: rgb(238, 255, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.banner .banner-text p{
+    font-size: 28px;
+    color: rgb(254, 255, 254);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+.faca-mais .container{
+    display: flex;
+    align-items: center;
+}
+.faca-mais .faca-mais-text{
+    width: 50%;
+    padding: 0 40px;
+    color: white;
+}
+.faca-mais .faca-mais-text h3{
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: yellow;
+}
+.faca-mais .faca-mais-text main{
+    margin: 5px 0 10px 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+.faca-mais .faca-mais-img{
+    width: 50%;
+}
+.faca-mais .faca-mais-img img{
+    width: 100%;
+}
+.depoimentos h3{
+    text-align: center;
+    color: yellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.depoimentos main{
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    padding: 10;
+}
+.depoimentos .card-item{
+    background-color: rgb(202, 159, 17);
+    margin: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 650px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: yellow;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.depoimentos .card-item img{
+    border-radius: 100px;
+    display: block;
+    margin: 10px auto;
+}
+.depoimentos .card-item .nome-user{
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.depoimentos .card-item .depoimentos-user{
+    font-size: 15px;
+    padding: 0 15px;
+}
+.depoimentos .card-item .star{
+    margin: 15px 0;
+    border-top: 2px solid rgb(230, 1, 1);
+}
+.depoimentos .card-item .star i{
+    color: yellow;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.depoimentos .card-item:hover{
+    background-color: rgb(228, 228, 35);
+    margin-top: -5px;
+}
+.depoimentos .card-item:hover .nome-user{
+    color: white;
+}
+.depoimentos .card-item:hover .info-user{
+    color: white;
+}
+.obs h3{
+    text-align: center;
+    color: rgb(104, 11, 11);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.obs main{
+    text-align: center;
+    color: rgb(2, 2, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.obs .container div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer{
+    background-color: blue;
+    text-align: center;
+}
+.footer i{
+    color: blue;
+    font-size: 14px;
+    background-color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+.footer main{
+    margin-top: 10px;
+    color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media(max-width: 830px){
+    .ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: red;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+ l a{
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    nav{
+     display: block;
+        }
+    }

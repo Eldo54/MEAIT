@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/table.css">
+    <title>Tabela de jogadores</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            outline: none;
+        }
+        body{
+            background-color: rgb(2, 2, 43);
+        }
+        table{
+            border: 3px solid red;
+            padding: 7px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 15px;
+            color: rgb(236, 237, 247);
+        }
+        table .thead{
+            background-color: aqua;
+        }
+        td{
+            border: 2px solid yellow;
+            padding: 5px;
+        }
+        th{
+            background-color: yellow;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        tr:nth-child(odd){
+            background-color: rgb(139, 0, 0);
+        }
+        tr:nth-child(even){
+            background-color: rgb(24, 0, 112);
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 30px;
+            background-image: url(img/BAC.webp);
+            height: 200px;
+        }
+        nav ul{
+            display: flex;
+            align-items: center;
+        }
+        nav ul a{
+            color: white;
+            margin: 0 25px;
+            text-transform: uppercase;
+            font-size: 20px;
+            display: block;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        nav ul a:not(.btn)::after{
+            content: "";
+            background-color: red;
+            height: 3px;
+            width: 50%;
+            margin: 0 auto;
+            display: block;
+            transition: 0.3s;
+        }
+        nav ul a:hover::after{
+            width: 100%;
+        }
+        .btn{
+            background-color: rgb(255, 196, 0);
+            color: rgb(255, 255, 255);
+            padding: 15px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            display: inline-block;
+            transition: 0.1s;
+        }
+        .btn:hover{
+            background-color: rgb(172, 172, 9);
+        }
+        @media(max-width: 830px){
+    .ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: red;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <a href="index.html">
+                    <img src="img/barcelona (1).png" alt="logo">
+                </a>
+                <ul class="ul">
+                    <a href="index.html">HOME</a>
+                    <a href="clube.html">CLUBE</a>
+                    <a href="jogadores.html">JOGADORES</a>
+                    <a class="btn" href="loja.html">Loja</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Camisa</th>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Nacionalidade</th>
+                <th>Valor de Mercado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Marc-André ter Stegen</td>
+                <td>30</td>
+                <td>Alemanha</td>
+                <td>$40.00M</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Iñaki Peña</td>
+                <td>24s</td>
+                <td>Espanhol</td>
+                <td>$4.00M</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ronald Araújo</td>
+                <td>24</td>
+                <td>Uruguai</td>
+                <td>$70.00M</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Jules Koundé</td>
+                <td>24</td>
+                <td>Fran&ccedil;a</td>
+                <td>$60.00M</td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td>Arnau Tenas</td>
+                <td>21</td>
+                <td>Espanhol</td>
+                <td>$2.00M</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Andreas Christensen</td>
+                <td>27</td>
+                <td>Dinamarca</td>
+                <td>$30.00M</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Eric García</td>
+                <td>22</td>
+                <td>Espanhol</td>
+                <td>$12.00M</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Ferran Torres</td>
+                <td>23</td>
+                <td>Espanhol</td>
+                <td>$30.00M</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Marcos Alonso</td>
+                <td>32</td>
+                <td>Espanhol</td>
+                <td>$7.00M</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Jordi Alba</td>
+                <td>34</td>
+                <td>Espanhol</td>
+                <td>$5.00M</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Sergi Roberto</td>
+                <td>34</td>
+                <td>Espanhol</td>
+                <td>$6.00M</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Sergio Busquets</td>
+                <td>34</td>
+                <td>Espanhol</td>
+                <td>$5.00M</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Pedri</td>
+                <td>20</td>
+                <td>Espanhol</td>
+                <td>$100.00M</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>Gavi</td>
+                <td>18</td>
+                <td>Espanhol</td>
+                <td>$90.00M</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Frankie de Jong</td>
+                <td>25</td>
+                <td>Holanda</td>
+                <td>$60.00M</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Ousmane Dembélé</td>
+                <td>25</td>
+                <td>Fran&ccedil;a</td>
+                <td>$60.00M</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Ansu Fati</td>
+                <td>20</td>
+                <td>Espanhol</td>
+                <td>$35.00M</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Raphinha</td>
+                <td>26</td>
+                <td>Brasil</td>
+                <td>$50.00M</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Robert Lewandowski</td>
+                <td>34</td>
+                <td>Polonia</td>
+                <td>$40.00M</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            
+        </tfoot>  
+    </table>
+</body>
+</html>
